@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Paytone+One&display=swap');
+
+.clearfix {
+	overflow: auto;
+}
+
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+:root {
+	--color-blue: #3c5a95;
+	--color-offwhite: #ffffff;
+}
+
+body {
+	background-color: #fffcee;
+	color: #171717;
+	font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    color: #fffcee;
+    background-color: var(--color-blue);
+    padding: 0;
+    border: none;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #667fb1;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--color-blue);
+	font-family: 'Paytone One', 'Lucida Sans', 'Lucida Sans Regular',
+		'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+h2 {
+	text-align: center;
+}
+
+h4,
+h5 {
+	font-size: 24px;
+}
+
+.hero {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.hero-right {
+    float: right;
+    width: 40%;
+}
+
+.hero-left {
+    float: left;
+    width: 60%;
+}
+
+.light-section {
+	background-color: var(--color-offwhite);
+	box-shadow: 0px 0px 47px 10px rgba(60, 90, 149, 0.2);
+	border-radius: 10px;
+	margin-right: 7%;
+    margin-left: 7%;
+    padding-right:8%;
+    padding-left: 8%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.dark-section {
+	padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+footer {
+	padding-left: 5%;
+}
