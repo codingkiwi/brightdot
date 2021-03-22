@@ -21,6 +21,7 @@
 	--color-lightblue: #667fb1;
 	--color-offwhite: #ffffff;
 	--color-background: #faf5df;
+	--color-nearblack: #202020;
 }
 
 body {
@@ -65,7 +66,7 @@ h5 {
 }
 
 header {
-	text-align: center;
+	text-align: left;
 	position: fixed;
 	z-index: 999;
 	width: 100%;
@@ -73,7 +74,9 @@ header {
 }
 
 header img {
-	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
 }
 
 .nav-toggle {
@@ -83,8 +86,8 @@ header img {
 .nav-toggle-label {
 	position: absolute;
 	top: 0;
-	left: 0;
-	margin-left: 1em;
+	right: 0;
+	margin-right: 1em;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -146,6 +149,16 @@ nav a {
 	transition: opacity 150ms ease-in-out;
 }
 
+nav button {
+	background-color: gold;
+	color: var(--color-nearblack);
+	display: none;
+}
+
+nav button:hover {
+	background-color: rgb(248, 231, 132);
+}
+
 nav a:hover {
 	color: var(--color-background);
 }
@@ -163,7 +176,7 @@ nav a:hover {
 	padding-left: 15%;
 	padding-right: 15%;
 	padding-bottom: 10%;
-	padding-top: 5%;
+	padding-top: 100px;
 }
 
 .hero-left {
@@ -200,8 +213,38 @@ footer {
 	padding-left: 5%;
 }
 
+/* card styling */
+.card {
+	background-color: var(--color-offwhite);
+	box-shadow: 0px 0px 47px 2px rgba(60, 90, 149, 0.12);
+	border-radius: 2px;
+	width: 330px;
+	height: 500px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 330px;
+	column-gap: 20px;
+	row-gap: 20px;
+	justify-items: center;
+}
+/* end card styling */
+
+@media screen and (min-width: 1000px) and (max-width: 1400px)  {
+	.grid-container {
+		grid-template-columns: 330px 330px;
+	}
+}
+
+@media screen and (min-width: 1401px) {
+	.grid-container {
+		grid-template-columns: 330px 330px 330px;
+	}
+}
+
 @media screen and (min-width: 800px) {
-	.nav-toggle-label{
+	.nav-toggle-label {
 		display: none;
 	}
 
@@ -210,11 +253,12 @@ footer {
 		grid-template-columns: 1fr auto minmax(600px, 3fr);
 	}
 
-	header img{
-		grid-column: 2 / 3;
+	header img {
+		grid-column: 1 / 2;
 		align-items: center;
 		margin-top: 20px;
 		margin-bottom: 20px;
+		margin-left: 3em;
 	}
 
 	nav {
@@ -222,7 +266,7 @@ footer {
 		position: relative;
 		text-align: left;
 		transition: none;
-		transform: scale(1,1);
+		transform: scale(1, 1);
 		background: none;
 		top: initial;
 		left: initial;
@@ -241,7 +285,7 @@ footer {
 	}
 
 	nav li {
-		margin-left: 3em;
+		margin-right: 3em;
 		margin-bottom: 0;
 	}
 
@@ -250,13 +294,13 @@ footer {
 		position: relative;
 	}
 
-	nav a::before{
+	nav a::before {
 		content: '';
 		display: block;
 		height: 5px;
-		background: black;
+		background: rgb(195, 197, 54);
 		position: absolute;
-		top: -.75em;
+		top: -0.75em;
 		left: 0;
 		right: 0;
 		transform: scale(0, 1);
@@ -264,6 +308,14 @@ footer {
 	}
 
 	nav a:hover::before {
-		transform: scale(1,1);
-}
+		transform: scale(1, 1);
+	}
+
+	nav button {
+		display: block;
+	}
+
+	.hero {
+		padding-top: 160px;
+	}
 }
