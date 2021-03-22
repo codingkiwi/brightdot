@@ -188,6 +188,7 @@ nav a:hover {
 	float: right;
 	width: 400px;
 	padding-top: 5%;
+	display:none;
 }
 
 .light-section {
@@ -235,11 +236,19 @@ footer {
 	.grid-container {
 		grid-template-columns: 330px 330px;
 	}
+
+	.hero-right{
+		display:block;
+	}
 }
 
 @media screen and (min-width: 1401px) {
 	.grid-container {
 		grid-template-columns: 330px 330px 330px;
+	}
+
+	.hero-right{
+		display:block;
 	}
 }
 
@@ -317,5 +326,9 @@ footer {
 
 	.hero {
 		padding-top: 160px;
+	}
+
+	.hero-right{
+		display: block;
 	}
 }
