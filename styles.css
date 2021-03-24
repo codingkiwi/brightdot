@@ -18,7 +18,7 @@
 
 :root {
 	--color-blue: #3c1874;
-	--color-lightblue: #667fb1;
+	--color-lightblue: #7f69a3;
 	--color-offwhite: #f3f3f3;
 	--color-background: rgb(242, 240, 245);
 	--color-nearblack: #283747;
@@ -39,7 +39,7 @@ body {
 	color: var(--color-offwhite);
 	background-color: var(--color-blue);
 	padding: 0;
-	padding-top: 10px;
+	padding-top: 11px;
 	border: none;
 	font-size: 17px;
 	text-align: center;
@@ -81,9 +81,13 @@ header {
 }
 
 header img {
-	margin-top: 10px;
-	margin-bottom: 10px;
 	margin-left: 10px;
+}
+
+#logo {
+	margin-bottom: 10px;
+	margin-top: 15px;
+	display: block;
 }
 
 .nav-toggle {
@@ -164,10 +168,6 @@ nav .button {
 
 nav .button:hover {
 	background-color: rgb(248, 231, 132);
-}
-
-nav a:hover {
-	color: var(--color-background);
 }
 
 .nav-toggle:checked ~ nav {
@@ -267,7 +267,7 @@ footer p{
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 }
 
 .card h5 {
@@ -319,9 +319,19 @@ footer p{
 		width: 100%;
 	}
 
+	.light-section{
+		padding-left:3%;
+		padding-right: 3%;
+	}
+
+	.dark-section{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 	.nav-toggle-label {
 		display: none;
 	}
@@ -334,9 +344,12 @@ footer p{
 	header img {
 		grid-column: 1 / 2;
 		align-items: center;
-		margin-top: 20px;
-		margin-bottom: 20px;
 		margin-left: 3em;
+	}
+
+	#logo {
+		margin-bottom: 10px;
+		margin-top: 15px;
 	}
 
 	nav {
