@@ -21,12 +21,12 @@
 	--color-lightblue: #667fb1;
 	--color-offwhite: #f3f3f3;
 	--color-background: rgb(242, 240, 245);
-	--color-nearblack: #202020;
+	--color-nearblack: #283747;
 }
 
 body {
 	background-color: var(--color-background);
-	color: #171717;
+	color: var(--color-nearblack);
 	font-family: 'Poppins', Arial, Helvetica, sans-serif;
 	font-size: 17px;
 	margin: 0;
