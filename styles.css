@@ -367,16 +367,6 @@ footer p{
 		width: 100%;
 	}
 
-	.light-section{
-		padding-left:3%;
-		padding-right: 3%;
-	}
-
-	.dark-section{
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-
 }
 
 @media screen and (min-width: 900px) {
