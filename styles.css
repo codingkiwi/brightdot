@@ -292,6 +292,25 @@ footer p:nth-child(3){
 	justify-content: center;
 }
 
+.grid-2-col {
+	margin-top: 50px;
+}
+
+.info-entry {
+	background-color: var(--color-offwhite);
+	box-shadow: 0px 0px 47px 2px rgba(60, 90, 149, 0.12);
+	border-radius: 2px;
+	padding: 50px
+}
+
+.info-entry h5 {
+	margin: 0;
+}
+
+.info-entry p {
+	margin-bottom: 0;
+}
+
 /* .go-corner {
 	display: flex;
 	align-items: center;
@@ -345,11 +364,19 @@ footer p:nth-child(3){
 	.grid-container {
 		grid-template-columns: 330px 330px;
 	}
+
+	.grid-2-col {
+		grid-template-columns: 1fr 1fr ;
+	}
 }
 
 @media screen and (min-width: 1401px) {
 	.grid-container {
 		grid-template-columns: 330px 330px 330px;
+	}
+
+	.grid-2-col {
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
